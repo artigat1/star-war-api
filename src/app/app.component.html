@@ -1,4 +1,8 @@
-<mat-toolbar [routerLink]="'/'" color="accent">Star Wars</mat-toolbar>
+<mat-toolbar [routerLink]="'/'" color="accent">
+  <h1>Star Wars Universe</h1>
+  <span class="spacer"></span>
+  <span>checking out the <a href="https://swapi.co" target="_blank">SWAPI</a></span>
+</mat-toolbar>
 <nav mat-tab-nav-bar>
   <a mat-tab-link
      *ngFor="let r of resources"

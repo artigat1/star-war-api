@@ -1,0 +1,25 @@
+@import '../assets/styles/pallette';
+@import '../assets/styles/variables';
+
+mat-toolbar {
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  h1 {
+    color: $mp-silver
+  }
+
+  span {
+    font-size: .75em;
+  }
+  
+  a {
+    color: $mp-silver;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-text-light;
+    }
+  }
+}
