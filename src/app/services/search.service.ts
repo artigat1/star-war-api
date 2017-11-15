@@ -3,8 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 
 import {SwapiResource} from '../shared/swapi-resources.enum';
-import {FilmTo, PeopleTo} from '../interfaces/transfer-objects';
-import {Planet, Species, Starship, Vehicle} from '../interfaces';
+import {FilmTo, PeopleTo, PlanetsTo, SpeciesTo, StarshipTo, VehiclesTo} from '../interfaces/transfer-objects';
 
 @Injectable()
 export class SearchService {
@@ -24,16 +23,16 @@ export class SearchService {
         return this.httpClient.get<PeopleTo>(`${this.apiEndpoint}/people?page=${page}`);
 
       case SwapiResource.Planets:
-        return this.httpClient.get<Planet[]>(`${this.apiEndpoint}/planets?page=${page}`);
+        return this.httpClient.get<PlanetsTo>(`${this.apiEndpoint}/planets?page=${page}`);
 
       case SwapiResource.Species:
-        return this.httpClient.get<Species[]>(`${this.apiEndpoint}/species?page=${page}`);
+        return this.httpClient.get<SpeciesTo>(`${this.apiEndpoint}/species?page=${page}`);
 
       case SwapiResource.Startships:
-        return this.httpClient.get<Starship[]>(`${this.apiEndpoint}/starships?page=${page}`);
+        return this.httpClient.get<StarshipTo>(`${this.apiEndpoint}/starships?page=${page}`);
 
       case SwapiResource.Vehicles:
-        return this.httpClient.get<Vehicle[]>(`${this.apiEndpoint}/vehicles?page=${page}`);
+        return this.httpClient.get<VehiclesTo>(`${this.apiEndpoint}/vehicles?page=${page}`);
 
     }
   }
