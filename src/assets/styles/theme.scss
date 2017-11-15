@@ -1,0 +1,12 @@
+@import '../../../node_modules/@angular/material/theming';
+@import 'pallette';
+
+@include mat-core();
+
+$my-primary: mat-palette($emerald);
+$my-accent: mat-palette($sapphire);
+$my-warn: mat-palette($ruby);
+
+$my-theme: mat-light-theme($my-primary, $my-accent, $my-warn);
+
+@include angular-material-theme($my-theme);

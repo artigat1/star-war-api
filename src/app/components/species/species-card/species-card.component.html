@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{species.name}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <dl>
+
+      <dt>Classification:</dt>
+      <dd>{{species.classification}}</dd>
+
+      <dt>Language:</dt>
+      <dd>{{species.language}}</dd>
+
+      <dt>Designation:</dt>
+      <dd>{{species.designation}}</dd>
+
+      <dt>Average height:</dt>
+      <dd>{{species.average_height}}cm</dd>
+
+      <dt>Average lifespan:</dt>
+      <dd>{{species.average_lifespan !== 'unknown' ? species.average_lifespan + ' years' : 'unknown'}}</dd>
+
+      <dt>Skin colours:</dt>
+      <dd>{{species.skin_colors}}</dd>
+
+      <dt>Eye colours:</dt>
+      <dd>{{species.eye_colors}}</dd>
+    </dl>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,38 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{vehicle.name}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <dl>
+      <dt>Vehicle class:</dt>
+      <dd>{{vehicle.vehicle_class}}</dd>
+
+      <dt>Model:</dt>
+      <dd>{{vehicle.model}}</dd>
+
+      <dt>Manufacturer:</dt>
+      <dd>{{vehicle.manufacturer}}</dd>
+
+      <dt>Cost:</dt>
+      <dd>{{vehicle.cost_in_credits > 0 ? (vehicle.cost_in_credits | number: '1.0-0') + 'credits' : 'Unknown'}}</dd>
+
+      <dt>Length:</dt>
+      <dd>{{vehicle.length > 0 ? (vehicle.length | number: '1.0-0') + 'm' : 'Unknown'}}</dd>
+
+      <dt>Cargo capacity:</dt>
+      <dd>{{vehicle.cargo_capacity > 0 ? (vehicle.cargo_capacity | number: '1.0-0') + 'kg' : 'Unknown'}}</dd>
+
+      <dt>Max atmosphering speed:</dt>
+      <dd>{{vehicle.max_atmosphering_speed}}</dd>
+
+      <dt>Consumables:</dt>
+      <dd>{{vehicle.consumables}}</dd>
+
+      <dt>Crew:</dt>
+      <dd>{{vehicle.crew}}</dd>
+
+      <dt>Passengers:</dt>
+      <dd>{{vehicle.passengers}}</dd>
+    </dl>
+  </mat-card-content>
+</mat-card>

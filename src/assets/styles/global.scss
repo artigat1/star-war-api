@@ -1,0 +1,59 @@
+@import "variables";
+
+mat-card {
+  margin-top: 10px;
+
+  .mat-card-header-text {
+    margin: 0;
+  }
+
+  mat-card-title {
+    color: $primary-text;
+    font-size: 1.5em !important;
+  }
+
+  mat-card-subtitle {
+    color: $grey-text;
+  }
+
+  .image-container {
+    text-align: center;
+    width: auto;
+    height: 250px;
+
+    img {
+      width: auto;
+      max-height: 100%;
+    }
+  }
+
+  mat-card-content {
+    color: $grey-text;
+    margin-top: .75em;
+    font-size: .8em;
+
+    .content {
+      display: block;
+      margin-top: .75em;
+    }
+
+    mat-list-item {
+      color: $accent-text;
+    }
+  }
+}
+
+.error {
+  color: $warning-text;
+}
+
+dl {
+  dt {
+    color: $grey-text;
+  }
+
+  dd {
+    color: $accent-text-light;
+    margin-bottom: .5em;
+  }
+}

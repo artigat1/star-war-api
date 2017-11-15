@@ -1,0 +1,11 @@
+<div fxLayout="row"
+     fxLayoutAlign="space-between start"
+     fxLayout.xs="column"
+     fxLayoutWrap
+     fxLayoutGap="10px">
+  <app-planet-card fxFlex="90%"
+                 fxFlex.gt-xs="50%"
+                 fxFlex.gt-md="30%"
+                 fxFlex.gt-lg="23%"
+                 *ngFor="let planet of (planets$ | async)" [planet]="planet"></app-planet-card>
+</div>
